@@ -1,0 +1,28 @@
+/* 内边距外边距清零 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 清除无序列表默认样式 */
+ul{
+    list-style: none;
+}
+
+/* 清除超链接下划线 */
+a{
+    text-decoration: none;
+}
+
+/* 清除浮动、解决外边距塌陷 */
+.clearfix::after,
+.clearfix::before{
+    content: '';
+    display: table;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+}
